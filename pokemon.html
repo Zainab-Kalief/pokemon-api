@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pokemon</title>
+    <script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'>
+    //this link is jQuery libary
+    </script>
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+          var imgArry = [];
+          for (var i = 1; i < 152; i++) {
+            var link = '';
+            link += '<img src =';
+            link += 'http://pokeapi.co/media/img/';
+            link += i;
+            link += '.png>';
+            imgArry.push(link);
+          }
+
+          $('div').html(imgArry);
+
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <div></div>
+  </body>
+</html>
